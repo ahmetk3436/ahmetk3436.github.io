@@ -33,17 +33,36 @@
       background-color: #f0f0f0;
     }
 
+    div {
+      text-align: center; /* Videoyu yatayda ortala */
+    }
+
     h1 {
       animation: renkDegisimi 5s linear infinite;
       font-size: 2em; /* Font boyutunu istediğiniz değere ayarlayabilirsiniz */
     }
+
+    #myVideo {
+      max-width: 100%; /* Videoyu div'in genişliğine sığacak şekilde ayarla */
+      vertical-align: middle; /* Videoyu dikeyde ortala */
+    }
   </style>
 </head>
 <body>
-  <h1 style="font-size: 120px;">Kablosuz Açıklanmış</h1>
-  <audio autoplay="autoplay" loop volume="1" preload="auto">
-    <source src="caribbean.mp3" type="audio/mpeg">
-    Tarayıcınız audio elementini desteklemiyor.
-  </audio>
+  <div>
+    <h1 style="font-size: 120px;">Kablosuz Açıklanmış</h1>
+    
+    <video id="myVideo" autoplay controls loop>
+      <source src="jack_sparrow.mp4" type="video/mp4">
+      Tarayıcınız video elementini desteklemiyor.
+    </video>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var video = document.getElementById("myVideo");
+      video.play();
+    });
+  </script>
 </body>
 </html>

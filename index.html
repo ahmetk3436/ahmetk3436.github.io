@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kablosuz Açıklanmış</title>
+  <style>
+    @keyframes renkDegisimi {
+      0% {
+        color: red;
+      }
+      25% {
+        color: blue;
+      }
+      50% {
+        color: green;
+      }
+      75% {
+        color: orange;
+      }
+      100% {
+        color: purple;
+      }
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      animation: renkDegisimi 5s linear infinite;
+      font-size: 2em; /* Font boyutunu istediğiniz değere ayarlayabilirsiniz */
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 120px;">Kablosuz Açıklanmış</h1>
+  <audio autoplay="autoplay" loop volume="1" preload="auto">
+    <source src="caribbean.mp3" type="audio/mpeg">
+    Tarayıcınız audio elementini desteklemiyor.
+  </audio>
+</body>
+</html>

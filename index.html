@@ -35,6 +35,9 @@
 
     div {
       text-align: center; /* Videoyu yatayda ortala */
+      max-width: 800px; /* İstediğiniz bir maksimum genişlik belirleyin */
+      width: 100%;
+      padding: 0 20px; /* Kenar boşlukları ekleyin */
     }
 
     h1 {
@@ -43,6 +46,8 @@
     }
 
     #myVideo {
+      width: 100%; /* Videoyu tam genişlikte ayarlayın */
+      height: auto; /* Oranları korumak için otomatik yükseklik */
       max-width: 100%; /* Videoyu div'in genişliğine sığacak şekilde ayarla */
       vertical-align: middle; /* Videoyu dikeyde ortala */
     }
@@ -50,7 +55,7 @@
 </head>
 <body>
   <div>
-    <h1 style="font-size: 120px;">Kablosuz Açıklanmış</h1>
+    <h1 style="font-size: 5vw;">Kablosuz Açıklanmış</h1>
     
     <video id="myVideo" autoplay controls loop>
       <source src="jack_sparrow.mp4" type="video/mp4">
